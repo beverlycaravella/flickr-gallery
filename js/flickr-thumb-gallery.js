@@ -17,18 +17,43 @@
             // These are the defaults.
             height: "180",
             width: "240",
-			setTitle: true,
-			setNum: true,
-			setOwner: true
+			showTitle: true,
+			titlePostion: "top",
+			showTotal: true,
+			showOwner: true
 			
         }, options );
  
                 var photosetTitle = data.photoset.title;
-                if (settings.setTitle == true) {
+                if (settings.showTitle == true && settings.titlePostion == "top") {
 				
-				$( "<h3>" + photosetTitle + "</h3>" ).insertBefore(thisSet);
+				$( "<div class='setTitle'>" + photosetTitle + "</div>" ).insertBefore(thisSet);
 				
-				}				
+				}	
+
+				if (settings.showTitle == true && settings.titlePostion == "bottom") {
+				
+				$( "<div class='setTitle'>" + photosetTitle + "</div>" ).insertAfter(thisSet);
+				
+				}	
+				
+				 var photosetOwner = data.photoset.ownername;
+				 
+				 if (settings.showOwner == true) {
+				 
+				 $( "<div class='owner'>by " + photosetOwner + "</div>" ).insertAfter(thisSet);
+				 
+				 }
+
+				 var photosetTotal = data.photoset.total;
+				 
+				 if (settings.showTotal == true) {
+				 
+				 $( "<div class='total'>" + photosetTotal + " images</div>" ).insertAfter(thisSet);
+				 
+				 }
+				 
+				  
                				
 
                 $.each(data.photoset.photo, function (i, item) {
