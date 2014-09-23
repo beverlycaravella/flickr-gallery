@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<meta charset="utf-8">
+	
+	<meta name="description" content="jQuery Flickr Gallery Plugin using Colorbox by Jack L. Moore">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link href="css/style.css" rel="stylesheet" media="all">
+	<link href="colorbox/example3/colorbox.css" rel="stylesheet" media="all">
+	
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	
+	<script src="colorbox/jquery.colorbox-min.js"></script>
+	
+	<script src="js/flickr-thumb-gallery.js"></script>
+</head>
+
+<body>
+
+	<h1>Flickr Photoset Thumbnail Gallery Example (beta)</h1>
+	
+	<h2>Click on a thumbnail to view gallery.</h2>
+	
+		<div class="thumbholder">
+			
+			<div id="72157639163628903" class="thumbs"></div>
+		</div>
+		
+		<div class="thumbholder">
+			
+			<div id="72157629025244071" class="thumbs"></div>
+		</div>
+		
+		<div class="thumbholder">
+			
+			<div id="72157622964920227" class="thumbs"></div>
+			
+		</div>
+
+<script>
+$(document).ready(function(){
+
+$(".thumbs").flickrGalleryThumbs({
+
+"height": 200,
+"width": 300
+
+
+});
+
+});		
+</script>
+
+</body>
+</html>
+	
