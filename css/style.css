@@ -7,6 +7,14 @@ h1, h2, h3 {
 .hide {
     display: none;
 }
+
+section {
+	display: block;
+	clear: both;
+	margin-bottom: 50px;
+	overflow: auto;
+}
+
 .thumbholder {
     display: inline-block;
     float: left;

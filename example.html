@@ -23,30 +23,65 @@
 	
 	<h2>Click on a thumbnail to view gallery.</h2>
 	
+	<section>
+	 <h3>Defaults</h3>
 		<div class="thumbholder">
-			
-			<div id="72157639163628903" class="thumbs"></div>
+			<div id="72157639163628903" class="thumbs default"></div>
 		</div>
 		
 		<div class="thumbholder">
-			
-			<div id="72157629025244071" class="thumbs"></div>
+			<div id="72157629025244071" class="thumbs default"></div>
 		</div>
 		
 		<div class="thumbholder">
-			
-			<div id="72157622964920227" class="thumbs"></div>
-			
+			<div id="72157622964920227" class="thumbs default"></div>
+		</div>		
+	</section>	
+	
+	
+	<section>
+	 <h3>Bottom Title</h3>
+		<div class="thumbholder">
+			<div id="72157632345112339" class="thumbs bottomTitle"></div>
 		</div>
+		
+		<div class="thumbholder">
+			<div id="72157627110310239" class="thumbs bottomTitle"></div>
+		</div>
+		
+		<div class="thumbholder">
+			<div id="72157622126724623" class="thumbs bottomTitle"></div>
+		</div>		
+	</section>	
+
+	
+	<section>
+	 <h3>Custom Size Thumbs</h3>
+		<div class="thumbholder">
+			<div id="72157612683786704" class="thumbs customSize"></div>
+		</div>
+		
+		<div class="thumbholder">
+			<div id="72157622254592236" class="thumbs customSize"></div>
+		</div>
+		
+	</section>	
 
 <script>
 $(document).ready(function(){
 
-$(".thumbs").flickrGalleryThumbs({
+$(".thumbs.default").flickrGalleryThumbs();
 
-"height": 200,
-"width": 300
+$(".thumbs.bottomTitle").flickrGalleryThumbs({
 
+titlePostion: "bottom"
+
+});
+
+$(".thumbs.customSize").flickrGalleryThumbs({
+
+width: 600,
+height: 400
 
 });
 

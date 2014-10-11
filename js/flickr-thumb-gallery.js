@@ -31,11 +31,6 @@
 				
 				}	
 
-				if (settings.showTitle == true && settings.titlePostion == "bottom") {
-				
-				$( "<div class='setTitle'>" + photosetTitle + "</div>" ).insertAfter(thisSet);
-				
-				}	
 				
 				 var photosetOwner = data.photoset.ownername;
 				 
@@ -52,6 +47,12 @@
 				 $( "<div class='total'>" + photosetTotal + " images</div>" ).insertAfter(thisSet);
 				 
 				 }
+				 
+				if (settings.showTitle == true && settings.titlePostion == "bottom") {
+				
+				$( "<div class='setTitle'>" + photosetTitle + "</div>" ).insertAfter(thisSet);
+				
+				}	
 				 
 				  
                				
