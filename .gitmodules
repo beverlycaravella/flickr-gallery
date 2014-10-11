@@ -1,3 +1,6 @@
 [submodule "externals/colorbox"]
 	path = externals/colorbox
 	url = https://github.com/jackmoore/colorbox.git
+[submodule "colorbox"]
+	path = colorbox
+	url = https://github.com/jackmoore/colorbox.git
