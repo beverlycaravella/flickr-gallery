@@ -1,0 +1,28 @@
+body {
+    background: #eee;
+}
+h1, h2, h3 {
+    font-family: helvetica, arial, sans-serif;
+}
+.hide {
+    display: none;
+}
+
+section {
+	display: block;
+	clear: both;
+	margin-bottom: 50px;
+	overflow: auto;
+}
+
+.thumbholder {
+    display: inline-block;
+    float: left;
+    margin-right: 30px;
+}
+.show {
+    border: 2px solid #cccccc;
+}
+a:focus {
+    outline: none !important;
+}
